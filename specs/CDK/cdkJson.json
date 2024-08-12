@@ -1,0 +1,63 @@
+ [
+	{
+		"repair order": {
+			"OPEN DATE": {
+				"type":"string",
+				"description": "Date reapir order was opened",
+				"format": "MM/DD/YY",
+				"example": "08/05/24"
+				},
+			"CLOSE DATE":{
+				"type":"string", 
+				"description": "Date repair order was closed",
+				"format": "MM/DD/YY", 
+				"example": "08/05/24"},
+			"RO$":{
+				"type":"string", 
+				"description": "Repair order number",
+				"example": "114686"
+			},
+			"SVC ADVISOR": {
+				"type":"string", 
+				"description": "DMS ID of the service advisor",
+				"example": "346"
+			},
+			"OP CODE": {
+				"type":"string", 
+				"description": "Labor operation code",
+				"example": "11TOZ"
+			},
+			"OP DESC":{
+				"type":"string", 
+				"description": "Description of the labor operation",
+				"example": "MULTIPOINT INSP"
+			},
+			"CWI": {
+				"type":"string", 
+				"description": "Payment type of the line of the repair order. C = Customer Pay, W = Warranty, I = Internal",
+				"enums" : ["C", "W", "I"],
+				"example": "C"
+			},
+			"TECH#": {
+				"type":"string", 
+				"description": "DMS ID of teh technician",
+				"example": "346"
+			},
+			"TECH TIME": {
+				"type":"string", 
+				"description": "Descrition on of total hours paid to the technician",
+				"example": "2.40"
+			},
+			"LBR SLS": {
+				"type":"string", 
+				"description": "Description of total labor sales on the reapir order",
+				"example": "$25.99"
+			},
+			"PTS SLS": {
+				"type":"string", 
+				"description": "Description of total parts sales on the repair order",
+				"example": "$56.23"
+			}
+		}
+	}
+]
